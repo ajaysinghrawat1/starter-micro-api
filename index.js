@@ -8,19 +8,19 @@
 
 
 
-const http = require('http');
-const readline = require('readline');
+// const http = require('http');
+// const readline = require('readline');
 
-const server = http.createServer(function (req, res) {
-    console.log(`Just got a request at ${req.url}!`)
-    res.write('ajay rawat');
-    res.end();
-}).listen(process.env.PORT || 3000);
+// const server = http.createServer(function (req, res) {
+//     console.log(`Just got a request at ${req.url}!`)
+//     res.write('ajay rawat');
+//     res.end();
+// }).listen(process.env.PORT || 3000);
 
-const rl = readline.createInterface({
-  input: process.stdin,
-  output: process.stdout
-});
+// const rl = readline.createInterface({
+//   input: process.stdin,
+//   output: process.stdout
+// });
 
 server.on('listening', () => {
     console.log('Server is running.');
